@@ -1,29 +1,33 @@
 describe('Gilded Rose', () => {
-  it('should foo', () => {
-    const gildedRose = new Shop([new Item('foo', 0, 0)]);
-    const items = gildedRose.updateQuality();
-    expect(items[0].name).toEqual('foo');
+  describe('name', () => {
+    it('should return foo', () => {
+      const gildedRose = new Shop([new Item('foo', 0, 0)]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].name).toEqual('foo');
+    });
   });
 
-  describe('sellIn',function(){
-    it('sellIn should decrease by one after each update', () => {
-      const gildedRose = new Shop([new Item()]);
+  describe('sellIn', () => {
+    it('should decrease by one after each update', () => {
+      const gildedRose = new Shop([new Item('foo', 0, 0)]);
+      const items = gildedRose.updateQuality();
+      expect(items[0].sellIn).toEqual(-1);
     });
-  })
+  });
 
-  describe('quality', function(){
-    it('should have minimum value of 0', function(){
+  describe('quality', () => {
+    it('should have minimum value of 0', () => {
       const gildedRose = new Shop([new Item('foo', 0, 0)]);
       const items = gildedRose.updateQuality();
       expect(items[0].quality).toEqual(0);
-    })
+    });
 
-    it('should have a maximum value of 50', function(){
+    it('should have a maximum value of 50', () => {
       const gildedRose = new Shop([new Item('Aged Brie', 4, 50)]);
       const items = gildedRose.updateQuality();
       expect(items[0].quality).toEqual(50);
-    })
-  })
+    });
+  });
 
   describe('normal items', () => {
     it('quality should decrease by one', () => {
