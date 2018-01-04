@@ -60,9 +60,10 @@ class Shop {
     return this.items;
   }
 }
-// var  item = new Item("foo", 1, 2)
-// var  gildedRose = new Shop([item]);
-// var items =gildedRose.updateQuality();
-// console.log(items[0])
-// var items =gildedRose.updateQuality();
-// console.log(items[0])
+var  item = new Item("Sulfuras, Hand of Ragnaros", 1, 10)
+var  gildedRose = new Shop([item]);
+var items =gildedRose.updateQuality();
+console.log(items[0])
+var items =gildedRose.updateQuality();
+var items =gildedRose.updateQuality();
+console.log(items)
