@@ -1,0 +1,27 @@
+{
+  "name": "gildedrose-refactoring-kata",
+  "version": "1.0.0",
+  "description": "This is a well known kata developed by [Terry Hughes](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/). This is commonly used as a tech test to assess a candidate's ability to read, refactor and extend legacy code.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majdeddine/GildedRose-Refactoring-Kata-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majdeddine/GildedRose-Refactoring-Kata-js/issues"
+  },
+  "homepage": "https://github.com/majdeddine/GildedRose-Refactoring-Kata-js#readme",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
