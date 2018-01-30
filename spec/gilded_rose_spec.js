@@ -65,7 +65,7 @@ describe('Gilded Rose', () => {
     });
   });
 
-  xdescribe('Backstage passes', () => {
+  describe('Backstage passes', () => {
     it('qualtiy should increase by one', () => {
       const gildedRose = new Shop([new Item('Backstage passes to a TAFKAL80ETC concert', 11, 10)]);
       const items = gildedRose.updateQuality();
