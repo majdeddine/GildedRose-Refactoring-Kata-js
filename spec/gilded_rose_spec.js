@@ -43,7 +43,7 @@ describe('Gilded Rose', () => {
     });
   });
 
-  describe('Aged Brie', () => {
+  xdescribe('Aged Brie', () => {
     it('quality should increase over time', () => {
       const gildedRose = new Shop([new Item('Aged Brie', 2, 2)]);
       const items = gildedRose.updateQuality();
@@ -65,7 +65,7 @@ describe('Gilded Rose', () => {
     });
   });
 
-  describe('Backstage passes', () => {
+  xdescribe('Backstage passes', () => {
     it('qualtiy should increase by one', () => {
       const gildedRose = new Shop([new Item('Backstage passes to a TAFKAL80ETC concert', 11, 10)]);
       const items = gildedRose.updateQuality();
