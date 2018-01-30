@@ -43,7 +43,7 @@ describe('Gilded Rose', () => {
     });
   });
 
-  xdescribe('Aged Brie', () => {
+  describe('Aged Brie', () => {
     it('quality should increase over time', () => {
       const gildedRose = new Shop([new Item('Aged Brie', 2, 2)]);
       const items = gildedRose.updateQuality();
